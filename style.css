@@ -1,12 +1,14 @@
-html, body{height: 100%;}
+html, body{height: 100%;width: 100%;}
 body{background: #fff}
 
 h1{font-size: 50px; color: #303279;line-height: 30px;font-family:Arial;}
 .testo_arancione{color:#E69135;}
-.scritta_piccola{font-family:Geneva; text-shadow: 0px; color: #535353;}
+.scritta_piccola{font-family:Geneva; text-shadow: 0px; color: #535353;line height: 5px;}
+.logo{vertical-align: middle;height:69px; width:110px;}
+.logo_footer{height:69px; width:110px;position: relative; left:45%; padding: 20px 20px; }
 
 .header{background: #FDF3E6;}
-.header_logo{color: #000; float: left;display: block; padding: 20px;}
+.header_logo{color: #000; float: left;display: block;height: 10px;width: 15px;position: relative;left:3%;}
 .header_menu{float:right; margin: 0px, padding: 0; }
 
 
@@ -30,7 +32,7 @@ h1{font-size: 50px; color: #303279;line-height: 30px;font-family:Arial;}
 
 
 .footer{background: #25263F; height: 20%;}
-.footer_text{color: #fff; text-align: center;vertical-align:baseline;}
+.footer_text{font-family:Geneva; text-shadow: 0px;color: #b2b3cd; text-align: center;vertical-align:baseline;}
 
 /*Il contenitore header collassa, puliamo il float con un "clearfix"*/
 .clearfix:after {
