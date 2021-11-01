@@ -1,47 +1,32 @@
+/*-----GENERALI-----*/
 html, body{height: 100%;width: 100%;}
 body{background: #fff}
-
 h1{font-size: 50px; color: #303279;line-height: 30px;font-family:Arial;}
-.testo_arancione{color:#E69135;}
-.scritta_piccola{font-family:Geneva; text-shadow: 0px; color: #535353;line height: 5px;}
-.logo{vertical-align: middle;height:69px; width:110px;}
-.logo_footer{height:69px; width:110px;position: relative; left:45%; padding: 20px 20px; }
 
+/*-----HEADER-----*/
 .header{background: #FDF3E6;}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}/*Il contenitore header collassa, puliamo il float con un "clearfix"*/
 .header_logo{color: #000; float: left;display: block;height: 10px;width: 15px;position: relative;left:3%;}
+.logo{vertical-align: middle;height:69px; width:110px;}
+/*----MENU CON SCELTA "home"-"careers" -----*/
 .header_menu{float:right; margin: 0px, padding: 0; }
-
-
-.button_menu{font-size: 15px;display: inline-block;background: #E69135; color: #000; padding: 10px 20px; border-radius: 30px; text-decoration: none;}
-.button_menu a {color:#eee;display: block; padding: 2px;text-decoration: none;}
-.button_menu a:hover{color:#000;display: block;text-decoration: none;}
 .header_menu_item{display: inline-block;font-family:Geneva; text-shadow: 0px; color: #535353;font-size: 15px;}
 .header_menu_item a {color:#000;display: block; padding: 10px;text-decoration: none;}
 .header_menu_item a:hover{background: #FDF3FA;}
+/*----SIGN UP -----*/
+.button_menu{font-size: 15px;display: inline-block;background: #E69135; color: #000; padding: 10px 20px; border-radius: 30px; text-decoration: none;}
+.button_menu a {color:#eee;display: block; padding: 2px;text-decoration: none;}
+.button_menu a:hover{color:#000;display: block;text-decoration: none;}
 
+/*----COVER CENTRALE-----*/
 .cover{height: 70%; background: #fff;}
-.testo_cover{
-  display: table;
-  height: 100%;
-  width: 100%;
-}
-
+.testo_cover{display: table;height: 100%;width: 100%;}
 .testo_cover_centro{display: table-cell;vertical-align: middle;position: relative;left:20%;}
+.testo_arancione{color:#E69135;}
+.scritta_piccola{font-family:Geneva; text-shadow: 0px; color: #535353;line height: 5px;}
 .button_centro{display: inline-block;background: #E69135; color: #fff; padding: 15px 30px; border-radius: 26px; text-decoration: none; font-size: 18px}
 
-
-
+/*----FOOTER----*/
 .footer{background: #25263F; height: 30%;}
+.logo_footer{height:69px; width:110px;position: relative; left:45%; padding: 20px 20px; }
 .footer_text{font-family:Geneva; text-shadow: 0px;color: #b2b3cd;text-align: center;vertical-align:baseline;}
-
-/*Il contenitore header collassa, puliamo il float con un "clearfix"*/
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-* html .clearfix             { zoom: 1; } /* IE6 */
-*:first-child+html .clearfix { zoom: 1; } /* IE7 */
