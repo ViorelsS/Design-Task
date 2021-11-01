@@ -1,22 +1,25 @@
-html,body{height:100%;}
-body{background: #ffffff;}
+html, body{height: 100%;}
+body{background: #eee}
 
-.header{background: #FDF3E6; width: 100%;}
-.header_logo{color:red; float: left;}
-.header_menu{float: right;margin: 0; padding: 0;}
+.header{background: #333;}
+.header_logo{color: #fff; float: left;display: block; padding: 20px;}
+.header_menu{float:right; margin: 0px, padding: 0; }
+
 .header_menu_item{display: inline-block;}
-.header_menu_item a{color:#fff; display: block; padding: 2px;}
+.header_menu_item a {color:#fff; border: 1px solid red; display: block; padding: 20px;}
 .header_menu_item a:hover{background: #000;}
 
+.cover{height: 70%; background: #fff; border: 1px solid red;}
+.cover_caption{
+  display: table;
+  height: 100%;
+  width: 100%;
+}
 
-.cover{height: 100%; border: 1px solid red;}
-.cover{height: 70%; color: }
+.cover_caption_copy{display: table-cell;vertical-align: middle;text-align: center;}
+.button{display: inline-block;background: #000; color: #fff; padding: 10px 20px; border-radius: 3px; text-decoration: none;}
 
-
-
-
-
-/*clearfix ci permette di far occupare all'header tutto l'ingombro disponibile altrimenti collassa*/
+/*Il contenitore header collassa, puliamo il float con un "clearfix"*/
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -25,3 +28,5 @@ body{background: #ffffff;}
   clear: both;
   height: 0;
 }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
